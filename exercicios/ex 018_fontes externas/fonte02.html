@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+
+    
+    <style>
+        /*
+        Tipos de format()
+        a) opentype(otf)
+        b) truetype(ttf)
+        c) embedded-opentype
+        d) truetype-aat (Apple Advanced Typography) 
+        */
+        @font-face{
+            font-family:'love' ;
+            src: url('fonts/love story.otf') format('opentype'), url('fonts/love story ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        h1{
+            font-family: 'love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia vel libero unde tempore, officiis exercitationem cupiditate quisquam sunt, error excepturi ullam, corrupti atque veniam ab? Fuga voluptas porro perspiciatis asperiores tempora libero voluptatibus. Atque, vitae! Ad iusto fugit quod alias, esse officiis unde expedita error incidunt similique harum voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis enim saepe a at suscipit commodi voluptate quia animi. Non magni, at modi qui blanditiis officia repudiandae quae voluptatum dolorum quam ipsum tempora sapiente voluptate sit iure aliquid rerum itaque error provident perspiciatis ab atque. Eum accusamus quis dicta qui pariatur?</p>
+</body>
+</html>
