@@ -26,7 +26,8 @@
             border-collapse: collapse;
             font-family: Arial, Helvetica, sans-serif;
         }
-        caption{
+
+        caption {
             background-color: gray;
             padding: 10px;
             font-size: 1.5em;
@@ -54,11 +55,11 @@
         .numero {
             text-align: right;
         }
-        tfoot{
+
+        tfoot {
             background-color: black;
-            
+
         }
-       
     </style>
 </head>
 
@@ -83,17 +84,17 @@
     -->
 
     <table>
-        <thead>
-            <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da população</th>
-            </tr>
-        </thead>
         <caption>
             População das Unidades Federativas do Brasil
         </caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da população</th>
+            </tr>
+        </thead>
 
         <tbody>
 
@@ -291,9 +292,9 @@
         <tfoot>
             <tr>
                 <th></th>
-                <th>Total de Habitantes</th>
-                <td><strong>210.147.125</strong></td>
-                <th>100%</th>
+                <th scope="row">Total de Habitantes</th>
+                <th scope="row"><strong>210.147.125</strong></th>
+                <th scope="row">100%</th>
             </tr>
         </tfoot>
     </table>
