@@ -7,7 +7,7 @@
     padding: 0px;
 }
 
-body {
+html, body {
     background-color: slategray;
     min-height: 100vh;
 }
@@ -28,6 +28,7 @@ padding-bottom: 50px;
 header a{
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 header a:hover{
     text-decoration: underline;
@@ -48,7 +49,7 @@ section.imagem{
 }
 section.imagem p{
     width: 400px;
-    background-color:rgba(0, 0, 0, 0.447) ;
+    background-color:rgba(0, 0, 0, 0.613) ;
 }
 footer {
     background-color: black;
