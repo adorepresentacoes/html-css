@@ -9,13 +9,18 @@
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            text-align: center;           
         }
-
+        
         table {
-            width: 700px;
+            width: 750px;
             border-collapse: collapse;
-            background-color: silver;
+            background-color: gray;
             color: black;
+        }
+        thead th{
+            color: white;
         }
 
         th,
@@ -23,12 +28,23 @@
         td {
             border: 2px solid black;
             padding: 10px;
+            
         }
 
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
+        }
+        .media{
+            text-align: left;
+            color: white;
+        }
+        .materias{
+            background-color: white;
+        }
+        .disciplina{
+            text-align: left;
         }
         </style>
 
@@ -45,65 +61,67 @@
         <thead>
             
             <tr>
-                <th>ÁREA</th>
-                <th>DISCIPLINA</th>
-                <th colspan="2">NOTA</th>
-                <th>MÉDIA</th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2">Nota</th>
+                <th rowspan="2">Média</th>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
             </tr>     
             
         </thead>
         
         
         <tbody>
-            <tr>
-                <th rowspan="4">EXATAS</th>
-                <td>MATEMÁTICA</td>
-                <th>NOTA 1</th>
-                <th>NOTA 2</th> 
+            <tr class="materias">
+                <th rowspan="4">Exatas</th>
+                <td class="disciplina">Matemática</td>               
                 <td>10,0</td>
                 <td>9,0</td>
                 <td>9,5</td>                
             </tr>
             
-            <tr>
-                <td>FÍSICA</td>
+            <tr class="materias">
+                <td class="disciplina">Física</td>
                 <td>9,0</td>
                 <td>9,0</td>
                 <td>9,0</td>
             </tr>
 
-            <tr>
-                <td>QUÍMICA</td>
+            <tr class="materias">
+                <td class="disciplina">Química</td>
                 <td>8,0</td>
                 <td>8,0</td>
                 <td>8,0</td>
             </tr>
 
-            <tr>
-                <td>BIOLOGIA</td>
+            <tr class="materias">
+                <td class="disciplina">Biologia</td>
                 <td>7,0</td>
                 <td>8,0</td>
                 <td>7,5</td>
             </tr>
 
-            <th colspan="4">MÉDIA DE EXATAS</th>
+            <th colspan="4" class="media">Média de Exatas</th>
             <td>8,5</td>
 
-            <tr>
-                <th rowspan="2">HUMANAS</th>
-                <td>HISTÓRIA</td>
+            <tr class="materias">
+                <th rowspan="2">Humanas</th>
+                <td class="disciplina">História</td>
                 <td>6,0</td>
                 <td>7,0</td>
                 <td>6,5</td>
             </tr>
 
-            <tr>
-                <td>GEOGRAFIA</td>
+            <tr class="materias">
+                <td class="disciplina">Geografia</td>
                 <td>7,0</td>
                 <td>5,0</td>
                 <td>6,0</td>
             </tr>
-            <th colspan="4">MÉDIA HUMANAS</th>
+            <th colspan="4" class="media">Média de Humanas</th>
             <td>6,25</td>
 
         </tbody>
