@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+
+        }
+
+        table {
+            width: 750px;
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+
+        th,
+        tr,
+        td {
+            border: 2px solid black;
+        }
+
+        .principal {
+            background-color: lightgreen;
+        }
+
+        .idade {
+            background-color: lightgrey;
+        }
+
+        .prof {
+            background-color: lightpink;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <table>
+        <caption>CADASTRO</caption>
+
+        <colgroup>
+            <col class="principal">
+            <col>
+            <col class="idade">
+            <col class="prof">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">NOME</th>
+                <th scope="col">SEXO</th>
+                <th scope="col">IDADE</th>
+                <th scope="col">PROFISSÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <th>Vera Lúcia</th>
+            <td>Feminino</td>
+            <td>56 anos</td>
+            <td>Encarregada DP</td>
+
+            <tr>
+                <th>André</th>
+                <td>masculino</td>
+                <td>49 anos</td>
+                <td>vendedor</td>
+            </tr>
+
+            <tr>
+                <th>Julia Raquel</th>
+                <td>Feminino</td>
+                <td>22 anos</td>
+                <td>Estudante</td>
+            </tr>
+
+            <tr>
+                <th>Josué Luíz</th>
+                <td>Masculino</td>
+                <td>30 anos</td>
+                <td>Analista</td>
+            </tr>
+
+            <tr>
+                <th>Gleydson</th>
+                <td>Masculino</td>
+                <td>20 anos</td>
+                <td>Estudante</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
