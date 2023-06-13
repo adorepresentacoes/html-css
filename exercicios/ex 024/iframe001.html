@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+
+    <style>
+        iframe{
+width: 500px;
+height: 500px;
+border: 2px solid black;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -12,15 +22,29 @@
     <p>Acessando o site do
 
         <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
 
         para aprender a programar.
     </p>
 
-    <p>Será que podemos acessar também o site da <iframe src="https://www.google.com" frameborder="0">Google</iframe>,
-        através de um iframe?</p>
+    <p>Será que podemos acessar também o site da Google<iframe src="https://www.google.com" frameborder="0">Google</iframe>
+        através de um iframe?
+
+        
+        <p>Melhor acessar através desse link <a href="https://www.google.com" target="_blank">google</a></p>
+    
+    
+    </p>
     <p>
         Pois é, alguns sites tem proteção para que seu conteúdo não seja exibido dentro de iframes, através de sites de
         terceiros. Isso é uma proteção!!!
+    </p>
+
+    <p>
+        O repositório do Professor Guanabara <iframe src="https://gustavoguanabara.github.io/" frameborder="0" width="300" scolling="no">Guanabara</iframe> também é legal!
+        <p>Esse aceita iframe.</p>
+
+        <a href="https://gustavoguanabara.github.io/"></a>
     </p>
 
 </body>
