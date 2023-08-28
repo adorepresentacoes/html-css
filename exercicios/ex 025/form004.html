@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Exemplo de formulário</h1>
 
@@ -13,20 +15,24 @@
             <legend>Dados Pessoais</legend>
             <p>
                 <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" required minlength="5" maxlength="30" size="40" placeholder="Nome Completo">
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="30" size="40"
+                    placeholder="Nome Completo">
             </p>
             <p>
                 <!-- Estudar sobre expressões regulares RegEx -->
                 <label for="itel">Telefone:</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                    placeholder="(xx)xxxxx-xxxx" required>
             </p>
             <p>
                 <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="exemplo@exemplo.com" size="40">
+                <input type="email" name="email" id="iemail" autocomplete="email" required
+                    placeholder="exemplo@exemplo.com" size="40">
             </p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </fieldset>
     </form>
 </body>
+
 </html>
