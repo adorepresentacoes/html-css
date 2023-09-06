@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.menu{
+    list-style: none;    
+    float: left;
+}
+.menu li{
+    position: relative;
+    float: left;
+   margin: 3px;
+}
+.menu li a{
+    color: orange;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    background: green;
+    border-radius: 3px;
+    color: white;
+    text-shadow: 0px 0px 5px #fff;
+    
+}
+.menu li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+.menu li:hover ul, .menu li.over ul{
+display: block;
+}
+.menu li ul li{
+    border: 2px solid black;
+    display: block;
+    width: 150px;
+}
