@@ -48,6 +48,9 @@ img {
         background-image: url(../imagens/back-print.jpg);/*desnecessário*/       
         
     }
+    main::after{
+        content: 'Essa impressão foi feita por sugestão do Professor Gustavo Guanabara, do Curso em Vídeo! Você pode acessar o site: www.cursoemvideo.com ';        
+    }
     main{
         border: 2px solid black;
     }
